@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=cyrillic,cyrillic-ext');
+@import "vars";
+@import "icons";
+@import "buttons";
+@import "popus";
+@import "common";
+@import "breadcrumbs";
+
+// Header and Footer
+@import "header";
+@import "footer";
+
+// Homepage
+@import "homepage";
+
+// Category
+@import "page-category";
+
+// Products list
+@import "page-products";
+
+// News list
+@import "page-news-list";
+
+// News detail
+@import "page-news-detail";
+
+// FAQ
+@import "page-faq";
+
+// Contact page
+@import "page-contact";
+
+// Login page
+@import "page-login";
+
+// 404 page
+@import "page-404";
+
+// Product page
+@import "page-product";
+
+// Cart page
+@import "page-cart";
+
+// Order page
+@import "page-order";
+
+// Order page
+@import "page-thanks";
+
+@import "media";

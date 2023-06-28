@@ -1,0 +1,40 @@
+/* Thanks page
+-----------------------------*/
+@media (max-width: 768px) {
+    .thanks-page {
+        background: #fff;
+        padding: 20px;
+    }
+}
+
+.thanks-order-info {
+    display: flex;
+    padding: 20px 0;
+    font-size: 24px;
+    font-weight: 500;
+
+    span {
+        font-size: 15px;
+        font-weight: 400;
+    }
+    &__left {
+        padding-right: 20px;
+
+        @media (max-width: 768px) {
+            padding-right: 10px;
+        }
+    }
+    &__right {
+        padding-left: 20px;
+
+        @media (max-width: 768px) {
+            padding-left: 10px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        font-size: 20px;
+        justify-content: center;
+        text-align: center;
+    }
+}

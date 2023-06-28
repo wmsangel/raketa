@@ -1,0 +1,55 @@
+.icon-arrow {
+    width: 17px;
+    height: 20px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    margin-left: 5px;
+
+    &.down {
+        &:after {
+            content: '';
+            width: 10px;
+            height: 1px;
+            background: #fff;
+            position: absolute;
+            transform: rotate(45deg);
+            top: 9px;
+            left: 0;
+        }
+        &:before {
+            content: '';
+            width: 10px;
+            height: 1px;
+            background: #fff;
+            position: absolute;
+            transform: rotate(-45deg);
+            top: 9px;
+            right: 0;
+        }
+    }
+
+    &.up {
+        &:after {
+            content: '';
+            width: 10px;
+            height: 1px;
+            background: #fff;
+            position: absolute;
+            transform: rotate(-45deg);
+            top: 9px;
+            left: 0;
+        }
+        &:before {
+            content: '';
+            width: 10px;
+            height: 1px;
+            background: #fff;
+            position: absolute;
+            transform: rotate(45deg);
+            top: 9px;
+            right: 0;
+        }
+    }
+
+}

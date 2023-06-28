@@ -1,0 +1,19 @@
+/* Login page
+-----------------------------*/
+@media (max-width: 768px) {
+    .login-page {
+        background: #fff;
+        padding: 20px;
+    }
+}
+form.login-form {
+    width: 40%;
+    color: #053647;
+    margin: 0 auto;
+    font-weight: 300;
+    font-size: 14px;
+
+    @media (max-width: 992px) {
+        width: 100%;
+    }
+}

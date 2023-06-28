@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Прототип e-commerce</title>
+
+    <link rel="stylesheet" href="css/scheme.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"/>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+
+
+
+<!-- Top Quick Links -->
+<section id="top-bar">
+    <div class="wrapper">
+        <div class="top-bar">
+            <div class="top-bar__links">
+                <ul>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Бренды</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="top-bar__shopinfo txt-center">Интернет-магазин спортивных товаров для спорта, туризма и отдыха "Ракета", г. Псков</div>
+            <div class="top-bar__contact txt-right">
+                <ul>
+                    <li>+7 (8112) 22 22 72</li>
+                    <li><a href="mailto:zakaz@raketasport.ru">zakaz@raketasport.ru</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Header -->
+<header id="header">
+    <div class="wrapper">
+        <div class="header">
+            <div class="header__logo">
+                <a href="/"><img src="images/logo.png" alt=""></a>
+            </div>
+            <div class="header__search">
+                <form>
+                    <input type="text" class="form-input" placeholder="Введите запрос для поиска">
+                </form>
+            </div>
+            <div class="header__time">
+                Время работы:
+                <br>Пн-Сб: 10:00 - 19:00;
+                <br>Вс: 11:00 - 18:00;
+            </div>
+            <div class="header__cart txt-right">
+                <div class="header__cart-icon"><div class="header__cart-count">3</div></div> <div class="header__cart-txt">Корзина пуста</div>
+            </div>
+            <div class="header__user mobile-hide">
+                <div class="header__user-txt"><a href="#">Войти</a></div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+<!-- Navigation -->
+<section class="navigation">
+    <div class="wrapper">
+        <div class="mobile-menu">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <nav>
+            <ul>
+                <li class="has-dropdown">
+                    <a href="javascript:void(0)" class="navigation__link catalog-menu catalog-menu-js ">Каталог товаров <i class="icon-arrow down"></i></a>
+                    <div class="catalog-menu-list ">
+                        <ul>
+                            <li><a href="/">Активный отдых (весна, лето)</a></li>
+                            <li><a href="/">Вело запчасти</a></li>
+                            <li><a href="/">Единоборства, бокс</a></li>
+                            <li><a href="/">Игровые виды спорта</a></li>
+                            <li><a href="/">Игры</a></li>
+                            <li><a href="/">Плавание</a></li>
+                            <li><a href="/">Тяжелая атлетика</a></li>
+                            <li><a href="/">Туризм</a></li>
+                            <li><a href="/">Спортоборудование для дома и зала</a></li>
+                            <li><a href="/">Художественная гимнастика</a></li>
+                            <li><a href="/">Фитнес</a></li>
+                            <li><a href="/">Активный отдых (зима)</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="javascript:void(0)" class="navigation__link">Распродажа</a></li>
+                <li><a href="javascript:void(0)" class="navigation__link">Наше производство</a></li>
+                <li><a href="javascript:void(0)" class="navigation__link">Новинки</a></li>
+                <li><a href="javascript:void(0)" class="navigation__link">Ожидаемые поступления</a></li>
+            </ul>
+
+            <div class="mobile-menu__close"></div>
+
+            <div class="user-login desktop-hide">
+                <a href="#">Вход</a> | <a href="#">Регистрация</a>
+            </div>
+        </nav>
+    </div>
+</section>
+
+
+
+<!-- Content -->
+<section class="content">
+    <div class="wrapper">
+
+        <!-- Breadcrumbs -->
+        <div class="breadcrumbs">
+            <ul>
+                <li><a href="/">Главная</a></li>
+                <li><a href="/">Единоборства</a></li>
+                <li class="active"><a href="/">Единоборства, бокс</a></li>
+            </ul>
+        </div>
+
+
+        <!-- Order page -->
+        <div class="order-page">
+            <div class="order-page__left">
+                <h3>Оформление заказа</h3>
+
+                <div class="order-page__box">
+                    <div class="order-page__box-title">Контактные данные</div>
+                    <div class="order-page__box-info">
+                        <fieldset>
+                            <div class="half-width">
+                                <div class="half-width__left">
+                                    <label for="contact-name">Ваше имя *</label>
+                                    <input type="text" name="name" id="contact-name" class="form-input" placeholder="ФИО">
+                                </div>
+                                <div class="half-width__right">
+                                    ФИО: <strong>Филатов Андрей Иванович</strong>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <div class="half-width">
+                                <div class="half-width__left">
+                                    <label for="contact-phone">Телефон *</label>
+                                    <input type="text" name="name" id="contact-phone" class="form-input" placeholder="+7 495 ______________">
+                                </div>
+                                <div class="half-width__right">
+                                    Телефон: <strong>+7 495 345 45 45</strong>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <div class="half-width">
+                                <div class="half-width__left">
+                                    <label for="contact-email">E-mail *</label>
+                                    <input type="text" name="name" id="contact-email" class="form-input" placeholder="example@yandex.ru">
+                                </div>
+                                <div class="half-width__right">
+                                    Mail: <strong>filatov@yandex.ru</strong>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <button type="button" class="form-small-button">Сохранить</button>
+                        </fieldset>
+                    </div>
+                </div>
+
+                <div class="order-page__box">
+                    <div class="order-page__box-title">Регион доставки</div>
+                    <div class="order-page__box-info">
+                        <fieldset>
+                            <div class="half-width">
+                                <div class="half-width__left">
+                                    <label for="contact-location">Местоположение *</label>
+                                    <input type="text" name="name" id="contact-location" class="form-input form-location" placeholder="Введите название города">
+                                </div>
+                                <div class="half-width__right">
+                                    Ваш город: <strong>Москва, ул. Советская 143</strong>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <div class="half-width">
+                                <div class="half-width__left">
+                                    <label for="contact-zipcode">Индекс *</label>
+                                    <input type="text" name="name" id="contact-zipcode" class="form-input" placeholder="">
+                                </div>
+                                <div class="half-width__right">
+                                    Индекс: <strong>102434</strong>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <button type="button" class="form-small-button">Сохранить</button>
+                        </fieldset>
+                    </div>
+                </div>
+
+                <div class="order-page__box">
+                    <div class="order-page__box-title">Доставка</div>
+                    <div class="order-page__box-info">
+                        <p>Выберите способ дотсавки товара*</p>
+
+                        <div class="ship-method__list">
+                            <div class="ship-method__list-block txt-center">
+                                <fieldset><a href="#" class="form-md-button">По городу</a></fieldset>
+                                <p>По городу от 200 рублей</p>
+
+                                <fieldset><a href="#" class="form-md-button">Адресная доставка</a></fieldset>
+                                <p>Крупногабаритный товар
+                                    от 10 кг- доставка до подъезда
+                                    далее каждый этаж 50 рублей</p>
+                            </div>
+                            <div class="ship-method__list-block txt-center">
+                                <fieldset><a href="#" class="form-md-button">Область до 30 км</a></fieldset>
+                                <p>До 30 км от 1 000 рублей </p>
+
+                                <fieldset><a href="#" class="form-md-button">Бесплатно в магазине</a></fieldset>
+                                <p> </p>
+                            </div>
+                            <div class="ship-method__list-block">
+                                <fieldset><a href="#" class="form-md-button">ТК</a></fieldset>
+
+                                <fieldset class="checkbox-group">
+                                    <label for="check-1"><input type="checkbox" id="check-1" name="check-ship" class="form-checkbox">ПЭК</label>
+                                    <label for="check-2"><input type="checkbox" id="check-2" name="check-ship" class="form-checkbox">Грузовозофф</label>
+                                    <label for="check-3"><input type="checkbox" id="check-3" name="check-ship" class="form-checkbox">Деловые линии</label>
+                                    <label for="check-4"><input type="checkbox" id="check-4" name="check-ship" class="form-checkbox">Автотрейдинг</label>
+                                </fieldset>
+                            </div>
+                        </div>
+
+                        <fieldset>
+                            <button type="button" class="form-small-button">Сохранить</button>
+                        </fieldset>
+                    </div>
+                </div>
+
+
+                <div class="order-page__box">
+                    <div class="order-page__box-title">Способы оплаты </div>
+                    <div class="order-page__box-info">
+                        <p>Выберите способы оплаты *</p>
+
+                        <div class="payment-method__list">
+                            <a href="#" class="link-btn active">Наличный расчет с чеком</a>
+                            <a href="#" class="link-btn">Терминал при получении</a>
+                            <a href="#" class="link-btn">Кредитной картой на сайте</a>
+                        </div>
+
+                        <fieldset>
+                            <button type="button" class="form-small-button">Сохранить</button>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+            <div class="order-page__right">
+                <h3>Ваш заказ</h3>
+
+                <div class="order-page__box">
+                    <div class="order-page__box-title">Ваш заказ <a href="#">Изменить</a></div>
+                    <div class="order-page__box-info">
+                        <div class="order-page-total">
+                            <div class="order-page-total-title">Товаров на:</div>
+                            <div class="order-page-total-val">6602 руб</div>
+                        </div>
+                        <div class="order-page-total">
+                            <div class="order-page-total-title">Доставка:</div>
+                            <div class="order-page-total-val">350 руб</div>
+                        </div>
+                    </div>
+                    <div class="order-page__box-foot">
+                        <div class="order-page__box-foot__left">Итоговая стоимость</div>
+                        <div class="order-page__box-foot__right">6602 руб</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Newsletter -->
+<section class="newsletter blue-bg">
+    <div class="wrapper">
+        <div class="newsletter-block">
+            <div class="newsletter-block__left">
+                Интернет-магазин спортивных товаров
+                <br>для спорта, туризма и отдыха "Ракета", г. Псков
+            </div>
+            <div class="newsletter-block__right txt-right">
+                <form>
+                    <input type="text" class="form-input" placeholder="Введите ваш email">
+                    <button type="button" class="form-button">Подписаться</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Footer -->
+<footer id="footer">
+    <div class="wrapper">
+        <div class="footer-list">
+            <div class="footer-list__block footer-list__block-about">
+                <p><a href="/"><img src="images/logo.png" alt=""></a></p>
+                <p>© 2015-2016 Ракета Спорт.
+                    <br>Все права пренадлежат владельцам.</p>
+            </div>
+            <div class="footer-list__block footer-list__block-links">
+                <ul>
+                    <li><h4>Информация</h4></li>
+                    <li><a href="/">Оптовикам</a></li>
+                    <li><a href="/">Партнёрам</a></li>
+                    <li><a href="/">Возврат товара</a></li>
+                    <li><a href="/">Контакты</a></li>
+                    <li><a href="/">Обратная связь</a></li>
+                </ul>
+            </div>
+            <div class="footer-list__block footer-list__block-time">
+                <h4>Время работы</h4>
+
+                <p>Пн-Сб. 10:00 - 19:00;
+                    <br>Сб. 11:00 - 18:00;</p>
+                <p>*в другое время принимаются
+                    на почту zakaz@raketasport.ru.</p>
+
+                <p>Обработка заказов производится
+                    в первый рабочий день.</p>
+            </div>
+            <div class="footer-list__block footer-list__block-contact">
+                <h4>Контакты</h4>
+
+                <p class="mobile-hide">Адрес: 180022, Псковская обл, Псков г, Леона
+                    <br>Поземского ул, дом № 102, помещение 2001</p>
+
+                <p>+7 (8112) 222272
+                    <br>zakaz@raketasport.ru</p>
+
+                <p>Пн-Сб: С 10:00 ДО 19:00;
+                    <br>Бс: С 10:00 до 18:00;
+                    <br>Вс: zakaz@raketasport.ru</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<div class="overlay"></div>
+</body>
+</html>

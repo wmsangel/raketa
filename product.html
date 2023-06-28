@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Прототип e-commerce</title>
+
+    <link rel="stylesheet" href="css/scheme.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"/>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+
+
+
+<!-- Top Quick Links -->
+<section id="top-bar">
+    <div class="wrapper">
+        <div class="top-bar">
+            <div class="top-bar__links">
+                <ul>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Бренды</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="top-bar__shopinfo txt-center">Интернет-магазин спортивных товаров для спорта, туризма и отдыха "Ракета", г. Псков</div>
+            <div class="top-bar__contact txt-right">
+                <ul>
+                    <li>+7 (8112) 22 22 72</li>
+                    <li><a href="mailto:zakaz@raketasport.ru">zakaz@raketasport.ru</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Header -->
+<header id="header">
+    <div class="wrapper">
+        <div class="header">
+            <div class="header__logo">
+                <a href="/"><img src="images/logo.png" alt=""></a>
+            </div>
+            <div class="header__search">
+                <form>
+                    <input type="text" class="form-input" placeholder="Введите запрос для поиска">
+                </form>
+            </div>
+            <div class="header__time">
+                Время работы:
+                <br>Пн-Сб: 10:00 - 19:00;
+                <br>Вс: 11:00 - 18:00;
+            </div>
+            <div class="header__cart txt-right">
+                <div class="header__cart-icon"><div class="header__cart-count">3</div></div>
+            </div>
+            <div class="header__user mobile-hide">
+                <div class="header__user-txt">
+                    Михаил,<br>
+                    <a href="#">Выйти</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+<!-- Navigation -->
+<section class="navigation">
+    <div class="wrapper">
+        <div class="mobile-menu">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <nav>
+            <ul>
+                <li class="has-dropdown">
+                    <a href="javascript:void(0)" class="navigation__link catalog-menu catalog-menu-js ">Каталог товаров <i class="icon-arrow down"></i></a>
+                    <div class="catalog-menu-list ">
+                        <ul>
+                            <li><a href="/">Активный отдых (весна, лето)</a></li>
+                            <li><a href="/">Вело запчасти</a></li>
+                            <li><a href="/">Единоборства, бокс</a></li>
+                            <li><a href="/">Игровые виды спорта</a></li>
+                            <li><a href="/">Игры</a></li>
+                            <li><a href="/">Плавание</a></li>
+                            <li><a href="/">Тяжелая атлетика</a></li>
+                            <li><a href="/">Туризм</a></li>
+                            <li><a href="/">Спортоборудование для дома и зала</a></li>
+                            <li><a href="/">Художественная гимнастика</a></li>
+                            <li><a href="/">Фитнес</a></li>
+                            <li><a href="/">Активный отдых (зима)</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="javascript:void(0)" class="navigation__link">Распродажа</a></li>
+                <li><a href="javascript:void(0)" class="navigation__link">Наше производство</a></li>
+                <li><a href="javascript:void(0)" class="navigation__link">Новинки</a></li>
+                <li><a href="javascript:void(0)" class="navigation__link">Ожидаемые поступления</a></li>
+            </ul>
+
+            <div class="mobile-menu__close"></div>
+
+            <div class="user-login desktop-hide">
+                Михаил, <a href="#">Выйти</a>
+            </div>
+        </nav>
+    </div>
+</section>
+
+
+
+<!-- Content -->
+<section class="content">
+    <div class="wrapper">
+
+        <!-- Breadcrumbs -->
+        <div class="breadcrumbs">
+            <ul>
+                <li><a href="/">Главная</a></li>
+                <li><a href="/">Единоборства</a></li>
+                <li class="active"><a href="/">Единоборства, бокс</a></li>
+            </ul>
+        </div>
+
+
+        <!-- Product page -->
+        <div class="product-page">
+
+            <div class="product-page-info">
+                <div class="desktop-hide title">Мешок боксерский SM 30кг на цепи (армированный PVC) SM-236 30 кг Черный</div>
+
+                <div class="product-page-info__left"><img src="gallery/product-big.jpg" alt=""></div>
+                <div class="product-page-info__right">
+                    <h1 class="mobile-hide">Мешок боксерский SM 30кг на цепи (армированный PVC) SM-236 30 кг Черный</h1>
+                    <div class="product-page-info-spu">
+                        <ul>
+                            <li><div>Код товара:</div> 00016784</li>
+                            <li><div>Доступность:</div> Есть в наличии</li>
+                        </ul>
+                    </div>
+                    <div class="product-page-info-price">243,00 руб.</div>
+                    <div class="product-page-info-qty">
+                        <button type="button" class="qty-minus"> - </button>
+                        <input type="text" name="quantity" value="1" class="qty-value" readonly />
+                        <button type="button" class="qty-plus"> + </button>
+                    </div>
+                    <div class="product-page-info-button">
+                        <a href="#" class="product-page-info-button__link">Добавить в корзину</a>
+                    </div>
+                    <div class="product-page-info-preview">
+                        <p>Для того, чтобы человек видел нормально (а не мутно) в воде, между глазом и водой должна быть воздушная прослойка. Именно такую прослойку и создают очки для...</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="product-page-tabs">
+                <ul>
+                    <li><a href="#product-page-tabs__description">Описание</a></li>
+                    <li><a href="#product-page-tabs__feature">Характеристики</a></li>
+                    <li><a href="#product-page-tabs__reviews">Отзывы</a></li>
+                </ul>
+                <div id="product-page-tabs__description">
+                    <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+                </div>
+                <div id="product-page-tabs__feature">
+                    <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+                </div>
+                <div id="product-page-tabs__reviews">
+                    <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Viewed products -->
+        <div class="viewed-products">
+            <h2>С этим товаром покупают</h2>
+
+            <div class="viewed-products__list">
+                <div class="viewed-products__list-item">
+                    <div class="viewed-products__list-item-photo"><img src="gallery/product-1.jpg" alt=""></div>
+                    <div class="viewed-products__list-item-info">
+                        <div class="viewed-products__list-item-title"><a href="/">Очки для плавания Indigo G100</a></div>
+                        <div class="viewed-products__list-item-price">1979 руб <a href="/" class="add2cart-btn"></a></div>
+                    </div>
+                </div>
+                <div class="viewed-products__list-item">
+                    <div class="viewed-products__list-item-photo"><img src="gallery/product-1.jpg" alt=""></div>
+                    <div class="viewed-products__list-item-info">
+                        <div class="viewed-products__list-item-title"><a href="/">Очки для плавания Indigo G100</a></div>
+                        <div class="viewed-products__list-item-price">1979 руб <a href="/" class="add2cart-btn"></a></div>
+                    </div>
+                </div>
+                <div class="viewed-products__list-item">
+                    <div class="viewed-products__list-item-photo"><img src="gallery/product-1.jpg" alt=""></div>
+                    <div class="viewed-products__list-item-info">
+                        <div class="viewed-products__list-item-title"><a href="/">Очки для плавания Indigo G100</a></div>
+                        <div class="viewed-products__list-item-price">1979 руб <a href="/" class="add2cart-btn"></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Newsletter -->
+<section class="newsletter blue-bg">
+    <div class="wrapper">
+        <div class="newsletter-block">
+            <div class="newsletter-block__left">
+                Интернет-магазин спортивных товаров
+                <br>для спорта, туризма и отдыха "Ракета", г. Псков
+            </div>
+            <div class="newsletter-block__right txt-right">
+                <form>
+                    <input type="text" class="form-input" placeholder="Введите ваш email">
+                    <button type="button" class="form-button">Подписаться</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Footer -->
+<footer id="footer">
+    <div class="wrapper">
+        <div class="footer-list">
+            <div class="footer-list__block footer-list__block-about">
+                <p><a href="/"><img src="images/logo.png" alt=""></a></p>
+                <p>© 2015-2016 Ракета Спорт.
+                    <br>Все права пренадлежат владельцам.</p>
+            </div>
+            <div class="footer-list__block footer-list__block-links">
+                <ul>
+                    <li><h4>Информация</h4></li>
+                    <li><a href="/">Оптовикам</a></li>
+                    <li><a href="/">Партнёрам</a></li>
+                    <li><a href="/">Возврат товара</a></li>
+                    <li><a href="/">Контакты</a></li>
+                    <li><a href="/">Обратная связь</a></li>
+                </ul>
+            </div>
+            <div class="footer-list__block footer-list__block-time">
+                <h4>Время работы</h4>
+
+                <p>Пн-Сб. 10:00 - 19:00;
+                    <br>Сб. 11:00 - 18:00;</p>
+                <p>*в другое время принимаются
+                    на почту zakaz@raketasport.ru.</p>
+
+                <p>Обработка заказов производится
+                    в первый рабочий день.</p>
+            </div>
+            <div class="footer-list__block footer-list__block-contact">
+                <h4>Контакты</h4>
+
+                <p class="mobile-hide">Адрес: 180022, Псковская обл, Псков г, Леона
+                    <br>Поземского ул, дом № 102, помещение 2001</p>
+
+                <p>+7 (8112) 222272
+                    <br>zakaz@raketasport.ru</p>
+
+                <p>Пн-Сб: С 10:00 ДО 19:00;
+                    <br>Бс: С 10:00 до 18:00;
+                    <br>Вс: zakaz@raketasport.ru</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<div class="overlay"></div>
+</body>
+</html>

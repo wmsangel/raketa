@@ -1,0 +1,67 @@
+/* 404 page
+-----------------------------*/
+.error {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__left {
+        width: 40%;
+        padding-right: 15px;
+
+        img {
+            max-width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            width: 100%;
+            padding-right: 0;
+            padding-bottom: 30px;
+        }
+    }
+
+    &__right {
+        width: 60%;
+        padding-left: 15px;
+
+        .error-links {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            li {
+                padding: 10px 0;
+                width: 50%;
+
+                a {
+                    color: #464646;
+                    text-decoration: none;
+                }
+
+                @media (max-width: 600px) {
+                    width: 100%;
+                    padding: 5px 0;
+
+                    a {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+
+        @media (max-width: 768px) {
+            width: 100%;
+            padding-left: 0;
+        }
+    }
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+}
+@media (max-width: 768px) {
+    .error-page {
+        background: #fff;
+        padding: 20px;
+    }
+}

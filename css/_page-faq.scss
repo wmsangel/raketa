@@ -1,0 +1,80 @@
+/* FAQ page
+-----------------------------*/
+.faq-page {
+
+    #faq-list {
+
+        h3 {
+            &.ui-accordion-header {
+                background: #f7f7f7;
+                font-size: 16px;
+                color: #464646;
+                padding: 15px 25px;
+                outline: none;
+                border: none;
+                margin-bottom: 20px;
+
+                .ui-icon {
+                    float: right;
+                    background-image: none;
+                    position: relative;
+                    width: 18px;
+                    height: 18px;
+                    margin-top: 0;
+                    transition: all .3s ease;
+
+                    &:after {
+                        content: '';
+                        width: 18px;
+                        height: 2px;
+                        background: #9d9d9d;
+                        position: absolute;
+                        top: 8px;
+                        left: 0;
+                    }
+
+                    &:before {
+                        content: '';
+                        width: 2px;
+                        height: 18px;
+                        background: #9d9d9d;
+                        position: absolute;
+                        top: 0;
+                        left: 8px;
+                    }
+                }
+
+                @media (max-width: 768px) {
+                    padding: 10px;
+                }
+            }
+            &.ui-state-active {
+                background: #053647;
+                color: #fff;
+
+                .ui-icon {
+                    transform: rotate(45deg);
+                    transition: all .3s ease;
+                }
+            }
+        }
+
+        .ui-accordion-content {
+            color: #464646;
+            font-size: 14px;
+            font-weight: 300;
+            padding: 0 10px 30px 10px;
+            border: none;
+
+            p {
+                margin-bottom: 20px;
+            }
+        }
+
+    }
+
+    @media (max-width: 768px) {
+        background: #fff;
+        padding: 20px;
+    }
+}

@@ -1,0 +1,57 @@
+/* Contact page
+-----------------------------*/
+@media (max-width: 768px) {
+    .contact-page {
+        background: #fff;
+        padding: 20px;
+    }
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+
+    h3 {
+        margin-bottom: 30px;
+    }
+
+    &__left {
+        width: 35%;
+        padding-right: 15px;
+
+        @media (max-width: 992px) {
+            width: 40%;
+        }
+
+        @media (max-width: 768px) {
+            width: 100%;
+            padding-right: 0;
+            padding-bottom: 30px;
+        }
+
+    }
+
+    &__right {
+        width: 65%;
+        padding-left: 15px;
+
+        img {
+            max-width: 100%;
+        }
+
+        @media (max-width: 992px) {
+            width: 60%;
+        }
+
+        @media (max-width: 768px) {
+            width: 100%;
+            padding-left: 0;
+        }
+    }
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+
+}

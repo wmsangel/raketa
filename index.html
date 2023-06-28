@@ -1,0 +1,518 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Прототип e-commerce</title>
+
+    <link rel="stylesheet" href="css/scheme.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body class="home-page">
+
+
+
+<!-- Top Quick Links -->
+<section id="top-bar">
+    <div class="wrapper">
+        <div class="top-bar">
+            <div class="top-bar__links">
+                <ul>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Бренды</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="top-bar__shopinfo txt-center">Интернет-магазин спортивных товаров для спорта, туризма и отдыха "Ракета", г. Псков</div>
+            <div class="top-bar__contact txt-right">
+                <ul>
+                    <li>+7 (8112) 22 22 72</li>
+                    <li><a href="mailto:zakaz@raketasport.ru">zakaz@raketasport.ru</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Header -->
+<header id="header">
+    <div class="wrapper">
+        <div class="header">
+            <div class="header__logo">
+                <a href="/"><img src="images/logo.png" alt=""></a>
+            </div>
+            <div class="header__search">
+                <form>
+                    <input type="text" class="form-input" placeholder="Введите запрос для поиска">
+                </form>
+            </div>
+            <div class="header__time">
+                Время работы:
+                <br>Пн-Сб: 10:00 - 19:00;
+                <br>Вс: 11:00 - 18:00;
+            </div>
+            <div class="header__cart txt-right">
+                <div class="header__cart-icon"><div class="header__cart-count">3</div></div>
+            </div>
+            <div class="header__user mobile-hide">
+                <div class="header__user-txt"><a href="#">Войти</a></div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+<!-- Navigation -->
+<section class="navigation">
+    <div class="wrapper">
+        <div class="mobile-menu">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <nav>
+            <ul>
+                <li class="has-dropdown">
+                    <a href="javascript:void(0)" class="navigation__link catalog-menu catalog-menu-js active">Каталог товаров <i class="icon-arrow down"></i></a>
+                    <div class="catalog-menu-list active">
+                        <ul>
+                            <li><a href="/">Активный отдых (весна, лето)</a></li>
+                            <li><a href="/">Вело запчасти</a></li>
+                            <li><a href="/">Единоборства, бокс</a></li>
+                            <li><a href="/">Игровые виды спорта</a></li>
+                            <li><a href="/">Игры</a></li>
+                            <li><a href="/">Плавание</a></li>
+                            <li><a href="/">Тяжелая атлетика</a></li>
+                            <li><a href="/">Туризм</a></li>
+                            <li><a href="/">Спортоборудование для дома и зала</a></li>
+                            <li><a href="/">Художественная гимнастика</a></li>
+                            <li><a href="/">Фитнес</a></li>
+                            <li><a href="/">Активный отдых (зима)</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="javascript:void(0)" class="navigation__link">Распродажа</a></li>
+                <li><a href="javascript:void(0)" class="navigation__link">Наше производство</a></li>
+                <li><a href="javascript:void(0)" class="navigation__link">Новинки</a></li>
+                <li><a href="javascript:void(0)" class="navigation__link">Ожидаемые поступления</a></li>
+            </ul>
+
+            <div class="mobile-menu__close"></div>
+
+            <div class="user-login desktop-hide">
+                <a href="#">Вход</a> | <a href="#">Регистрация</a>
+            </div>
+        </nav>
+    </div>
+</section>
+
+
+
+<!-- Main Slider -->
+<section class="main-slider">
+    <div class="main-slider__item" style="background-image: url('gallery/slider-1.jpg')">
+        <div class="wrapper main-slider-wrapper">
+            <h2>Продажа<br> Спортивных <br>Товаров Оптом в <br>России и СНГ</h2>
+            <p><a href="/">Подробнее</a></p>
+        </div>
+    </div>
+    <div class="main-slider__item" style="background-image: url('gallery/slider-1.jpg')">
+        <div class="wrapper main-slider-wrapper">
+            <h2>Продажа<br> Спортивных <br>Товаров Оптом в <br>России и СНГ</h2>
+            <p><a href="/">Подробнее</a></p>
+        </div>
+    </div>
+    <div class="main-slider__item" style="background-image: url('gallery/slider-1.jpg')">
+        <div class="wrapper main-slider-wrapper">
+            <h2>Продажа<br> Спортивных <br>Товаров Оптом в <br>России и СНГ</h2>
+            <p><a href="/">Подробнее</a></p>
+        </div>
+    </div>
+    <div class="main-slider__item" style="background-image: url('gallery/slider-1.jpg')">
+        <div class="wrapper main-slider-wrapper">
+            <h2>Продажа<br> Спортивных <br>Товаров Оптом в <br>России и СНГ</h2>
+            <p><a href="/">Подробнее</a></p>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Features list-->
+<section class="features">
+    <div class="wrapper">
+        <div class="features-list">
+            <div class="features-list__item">
+                <div class="features-list__item-icon txt-center"><img src="images/features-1.svg" alt=""></div>
+                <div class="features-list__item-title txt-center">Товары лучшего качества</div>
+                <div class="features-list__item-info txt-center mobile-hide">Работаем с юр., физ., лицами и совместными покупками</div>
+            </div>
+            <div class="features-list__item">
+                <div class="features-list__item-icon txt-center"><img src="images/features-2.svg" alt=""></div>
+                <div class="features-list__item-title txt-center">Доставка по пскову от 150 рублей</div>
+                <div class="features-list__item-info txt-center mobile-hide">До 24 часов отгрузка заказа в любой регион России</div>
+            </div>
+            <div class="features-list__item">
+                <div class="features-list__item-icon txt-center"><img src="images/features-3.svg" alt=""></div>
+                <div class="features-list__item-title txt-center">Доступные цены</div>
+                <div class="features-list__item-info txt-center mobile-hide">Возвращаем 50% стоимости доставки при каждом следующем заказе</div>
+            </div>
+            <div class="features-list__item">
+                <div class="features-list__item-icon txt-center"><img src="images/features-4.svg" alt=""></div>
+                <div class="features-list__item-title txt-center">Оплата наличными при получении</div>
+                <div class="features-list__item-info txt-center mobile-hide">Гарантии высокого качества и низкой цены Более 400 наименований</div>
+            </div>
+            <div class="features-list__item">
+                <div class="features-list__item-icon txt-center"><img src="images/features-5.svg" alt=""></div>
+                <div class="features-list__item-title txt-center">В наличии более 4000 наименований</div>
+                <div class="features-list__item-info txt-center mobile-hide">Постоянное наличие основного ассортимента</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Newest -->
+<section class="newest">
+    <div class="wrapper">
+        <h2>Наши новинки</h2>
+        <div class="newest-list">
+            <div class="newest-list__item">
+                <div class="newest-list__item-photo">
+                    <a href="#"><img src="gallery/product-1.jpg" alt=""></a>
+                    <br><a href="#">Быстрый просмотр</a>
+                </div>
+                <div class="newest-list__item-info">
+                    <div class="newest-list__item-info-title">Очки для плавания Indigo G100</div>
+                    <div class="newest-list__item-info-price">2199 руб</div>
+                    <a href="#" class="btn btn-red btn-small btn-radius">Купить</a>
+                </div>
+            </div>
+            <div class="newest-list__item">
+                <div class="newest-list__item-photo">
+                    <a href="#"><img src="gallery/product-1.jpg" alt=""></a>
+                    <br><a href="#">Быстрый просмотр</a>
+                </div>
+                <div class="newest-list__item-info">
+                    <div class="newest-list__item-info-title">Очки для плавания Indigo G100</div>
+                    <div class="newest-list__item-info-price">2199 руб</div>
+                    <a href="#" class="btn btn-red btn-small btn-radius">Купить</a>
+                </div>
+            </div>
+            <div class="newest-list__item">
+                <div class="newest-list__item-photo">
+                    <a href="#"><img src="gallery/product-1.jpg" alt=""></a>
+                    <br><a href="#">Быстрый просмотр</a>
+                </div>
+                <div class="newest-list__item-info">
+                    <div class="newest-list__item-info-title">Очки для плавания Indigo G100</div>
+                    <div class="newest-list__item-info-price">2199 руб</div>
+                    <a href="#" class="btn btn-red btn-small btn-radius">Купить</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Hottest -->
+<section class="hottest">
+    <div class="wrapper">
+        <div class="hottest-list">
+            <div class="hottest-list__left">
+                <h2>Акция</h2>
+                <div class="hottest-list__left-item">
+                    <div class="hottest-list__left-item-title">Специальное предложение</div>
+                    <div class="hottest-list__left-item-photo"><img src="gallery/akcia.jpg" alt=""></div>
+                    <div class="hottest-list__left-item-info">Перчатки боксерские Indigos черная натуральная</div>
+                    <div class="hottest-list__left-item-price">5001 руб</div>
+                    <div class="hottest-list__left-item-btn"><a href="/" class="btn btn-dark btn-radius">Подробнее</a></div>
+                </div>
+            </div>
+            <div class="hottest-list__right">
+                <h2>Хиты продаж</h2>
+                <div class="hottest-list__right-list">
+                    <div class="hottest-list__right-item">
+                        <div class="hottest-list__right-item-photo"><img src="gallery/hit-1.jpg" alt=""></div>
+                        <div class="hottest-list__right-item-title"><a href="/">Очки для плавания Indigo G100</a></div>
+                        <div class="hottest-list__right-item-price">1979 руб <a href="/" class="add2cart-btn"><img src="" alt=""></a></div>
+                    </div>
+                    <div class="hottest-list__right-item">
+                        <div class="hottest-list__right-item-photo"><img src="gallery/hit-1.jpg" alt=""></div>
+                        <div class="hottest-list__right-item-title"><a href="/">Очки для плавания Indigo G100</a></div>
+                        <div class="hottest-list__right-item-price">1979 руб <a href="/" class="add2cart-btn"><img src="" alt=""></a></div>
+                    </div>
+                    <div class="hottest-list__right-item">
+                        <div class="hottest-list__right-item-photo"><img src="gallery/hit-1.jpg" alt=""></div>
+                        <div class="hottest-list__right-item-title"><a href="/">Очки для плавания Indigo G100</a></div>
+                        <div class="hottest-list__right-item-price">1979 руб <a href="/" class="add2cart-btn"><img src="" alt=""></a></div>
+                    </div>
+                    <div class="hottest-list__right-item">
+                        <div class="hottest-list__right-item-photo"><img src="gallery/hit-1.jpg" alt=""></div>
+                        <div class="hottest-list__right-item-title"><a href="/">Очки для плавания Indigo G100</a></div>
+                        <div class="hottest-list__right-item-price">1979 руб <a href="/" class="add2cart-btn"><img src="" alt=""></a></div>
+                    </div>
+                    <div class="hottest-list__right-item">
+                        <div class="hottest-list__right-item-photo"><img src="gallery/hit-1.jpg" alt=""></div>
+                        <div class="hottest-list__right-item-title"><a href="/">Очки для плавания Indigo G100</a></div>
+                        <div class="hottest-list__right-item-price">1979 руб <a href="/" class="add2cart-btn"><img src="" alt=""></a></div>
+                    </div>
+                    <div class="hottest-list__right-item">
+                        <div class="hottest-list__right-item-photo"><img src="gallery/hit-1.jpg" alt=""></div>
+                        <div class="hottest-list__right-item-title"><a href="/">Очки для плавания Indigo G100</a></div>
+                        <div class="hottest-list__right-item-price">1979 руб <a href="/" class="add2cart-btn"><img src="" alt=""></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="advertise offset-in-top-120">
+    <div class="wrapper">
+        <div class="advertise-container">
+            <div class="advertise-start"><span>до</span></div>
+            <div class="advertise-prcnt">60%</div>
+            <div class="advertise-text">
+                Вы можете формировать заказ через корзину в Личном кабинете!<br>
+                Для этого Вам необходимо зарегистрироваться и получить пароль от<br>
+                Личного кабинета. В этом Вам с удовольствием поможет Ваш<br>
+                персональный менеджер.
+            </div>
+            <div class="advertise-btn">
+                <a href="#" class="btn btn-transparent btn-radius">Подробнее</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Latest Products -->
+<section class="latest-products offset-in-top-120">
+    <div class="wrapper">
+        <h2>Наши новинки</h2>
+        <div class="latest-products-list">
+            <div class="latest-products-list__item">
+                <div class="latest-products-list__item-photo"><img src="gallery/product-2.jpg" alt=""></div>
+                <div class="latest-products-list__item-info">
+                    <div class="latest-products-list__item-title"><a href="/">Очки для плавания Indigo G100</a></div>
+                    <div class="latest-products-list__item-price">1979 руб <a href="/" class="add2cart-btn"></a></div>
+                </div>
+            </div>
+            <div class="latest-products-list__item">
+                <div class="latest-products-list__item-photo"><img src="gallery/product-2.jpg" alt=""></div>
+                <div class="latest-products-list__item-info">
+                    <div class="latest-products-list__item-title"><a href="/">Очки для плавания Indigo G100</a></div>
+                    <div class="latest-products-list__item-price">1979 руб <a href="/" class="add2cart-btn"></a></div>
+                </div>
+            </div>
+            <div class="latest-products-list__item">
+                <div class="latest-products-list__item-photo"><img src="gallery/product-2.jpg" alt=""></div>
+                <div class="latest-products-list__item-info">
+                    <div class="latest-products-list__item-title"><a href="/">Очки для плавания Indigo G100</a></div>
+                    <div class="latest-products-list__item-price">1979 руб <a href="/" class="add2cart-btn"></a></div>
+                </div>
+            </div>
+            <div class="latest-products-list__item">
+                <div class="latest-products-list__item-photo"><img src="gallery/product-2.jpg" alt=""></div>
+                <div class="latest-products-list__item-info">
+                    <div class="latest-products-list__item-title"><a href="/">Очки для плавания Indigo G100</a></div>
+                    <div class="latest-products-list__item-price">1979 руб <a href="/" class="add2cart-btn"></a></div>
+                </div>
+            </div>
+            <div class="latest-products-list__item">
+                <div class="latest-products-list__item-photo"><img src="gallery/product-2.jpg" alt=""></div>
+                <div class="latest-products-list__item-info">
+                    <div class="latest-products-list__item-title"><a href="/">Очки для плавания Indigo G100</a></div>
+                    <div class="latest-products-list__item-price">1979 руб <a href="/" class="add2cart-btn"></a></div>
+                </div>
+            </div>
+            <div class="latest-products-list__item">
+                <div class="latest-products-list__item-photo"><img src="gallery/product-2.jpg" alt=""></div>
+                <div class="latest-products-list__item-info">
+                    <div class="latest-products-list__item-title"><a href="/">Очки для плавания Indigo G100</a></div>
+                    <div class="latest-products-list__item-price">1979 руб <a href="/" class="add2cart-btn"></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="latest-products-btn txt-center">
+            <a href="/" class="btn btn-dark btn-radius">Смотреть весь каталог</a>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Banner -->
+<section class="banner">
+    <div class="wrapper">
+        <div class="banner-img"><a href="/"><img src="images/banner.jpg" alt=""></a></div>
+    </div>
+</section>
+
+
+
+<!-- Brands -->
+<section class="brands">
+    <div class="wrapper">
+        <div class="brands-list">
+            <div class="brands-list__item"><img src="gallery/brand-logo.jpg" alt=""></div>
+            <div class="brands-list__item"><img src="gallery/brand-logo.jpg" alt=""></div>
+            <div class="brands-list__item"><img src="gallery/brand-logo.jpg" alt=""></div>
+            <div class="brands-list__item"><img src="gallery/brand-logo.jpg" alt=""></div>
+            <div class="brands-list__item"><img src="gallery/brand-logo.jpg" alt=""></div>
+            <div class="brands-list__item"><img src="gallery/brand-logo.jpg" alt=""></div>
+            <div class="brands-list__item"><img src="gallery/brand-logo.jpg" alt=""></div>
+            <div class="brands-list__item"><img src="gallery/brand-logo.jpg" alt=""></div>
+            <div class="brands-list__item"><img src="gallery/brand-logo.jpg" alt=""></div>
+            <div class="brands-list__item"><img src="gallery/brand-logo.jpg" alt=""></div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Our Stock -->
+<section class="stock">
+    <div class="wrapper">
+        <h2>Наш ассортимент</h2>
+
+        <div class="stock-list">
+            <div class="stock-list__item">
+                <div class="stock-list__item-photo"><img src="gallery/product-3.jpg" alt=""></div>
+                <div class="stock-list__item-info">
+                    <div class="stock-list__item-title"><a href="/">Очки для плавания Indigo G100</a></div>
+                    <div class="stock-list__item-price">1979 руб <a href="/" class="add2cart-btn"></a></div>
+                </div>
+            </div>
+            <div class="stock-list__item">
+                <div class="stock-list__item-photo"><img src="gallery/product-3.jpg" alt=""></div>
+                <div class="stock-list__item-info">
+                    <div class="stock-list__item-title"><a href="/">Очки для плавания Indigo G100</a></div>
+                    <div class="stock-list__item-price">1979 руб <a href="/" class="add2cart-btn"></a></div>
+                </div>
+            </div>
+            <div class="stock-list__item">
+                <div class="stock-list__item-photo"><img src="gallery/product-3.jpg" alt=""></div>
+                <div class="stock-list__item-info">
+                    <div class="stock-list__item-title"><a href="/">Очки для плавания Indigo G100</a></div>
+                    <div class="stock-list__item-price">1979 руб <a href="/" class="add2cart-btn"></a></div>
+                </div>
+            </div>
+            <div class="stock-list__item">
+                <div class="stock-list__item-photo"><img src="gallery/product-3.jpg" alt=""></div>
+                <div class="stock-list__item-info">
+                    <div class="stock-list__item-title"><a href="/">Очки для плавания Indigo G100</a></div>
+                    <div class="stock-list__item-price">1979 руб <a href="/" class="add2cart-btn"></a></div>
+                </div>
+            </div>
+            <div class="stock-list__item">
+                <div class="stock-list__item-photo"><img src="gallery/product-3.jpg" alt=""></div>
+                <div class="stock-list__item-info">
+                    <div class="stock-list__item-title"><a href="/">Очки для плавания Indigo G100</a></div>
+                    <div class="stock-list__item-price">1979 руб <a href="/" class="add2cart-btn"></a></div>
+                </div>
+            </div>
+            <div class="stock-list__item">
+                <div class="stock-list__item-photo"><img src="gallery/product-3.jpg" alt=""></div>
+                <div class="stock-list__item-info">
+                    <div class="stock-list__item-title"><a href="/">Очки для плавания Indigo G100</a></div>
+                    <div class="stock-list__item-price">1979 руб <a href="/" class="add2cart-btn"></a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="stock-btn txt-center">
+            <a href="/" class="btn btn-dark btn-radius">Смотреть весь каталог</a>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Newsletter -->
+<section class="newsletter blue-bg">
+    <div class="wrapper">
+        <div class="newsletter-block">
+            <div class="newsletter-block__left">
+                Интернет-магазин спортивных товаров
+                <br>для спорта, туризма и отдыха "Ракета", г. Псков
+            </div>
+            <div class="newsletter-block__right txt-right">
+                <form>
+                    <input type="text" class="form-input" placeholder="Введите ваш email">
+                    <button type="button" class="form-button">Подписаться</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Footer -->
+<footer id="footer">
+    <div class="wrapper">
+        <div class="footer-list">
+            <div class="footer-list__block footer-list__block-about">
+                <p><a href="/"><img src="images/logo.png" alt=""></a></p>
+                <p>© 2015-2016 Ракета Спорт.
+                    <br>Все права пренадлежат владельцам.</p>
+            </div>
+            <div class="footer-list__block footer-list__block-links">
+                <ul>
+                    <li><h4>Информация</h4></li>
+                    <li><a href="/">Оптовикам</a></li>
+                    <li><a href="/">Партнёрам</a></li>
+                    <li><a href="/">Возврат товара</a></li>
+                    <li><a href="/">Контакты</a></li>
+                    <li><a href="/">Обратная связь</a></li>
+                </ul>
+            </div>
+            <div class="footer-list__block footer-list__block-time">
+                <h4>Время работы</h4>
+
+                <p>Пн-Сб. 10:00 - 19:00;
+                    <br>Сб. 11:00 - 18:00;</p>
+                <p>*в другое время принимаются
+                    на почту zakaz@raketasport.ru.</p>
+
+                <p>Обработка заказов производится
+                    в первый рабочий день.</p>
+            </div>
+            <div class="footer-list__block footer-list__block-contact">
+                <h4>Контакты</h4>
+
+                <p class="mobile-hide">Адрес: 180022, Псковская обл, Псков г, Леона
+                    <br>Поземского ул, дом № 102, помещение 2001</p>
+
+                <p>+7 (8112) 222272
+                    <br>zakaz@raketasport.ru</p>
+
+                <p>Пн-Сб: С 10:00 ДО 19:00;
+                   <br>Бс: С 10:00 до 18:00;
+                   <br>Вс: zakaz@raketasport.ru</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<div class="overlay"></div>
+</body>
+</html>

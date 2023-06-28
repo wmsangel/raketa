@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Прототип e-commerce</title>
+
+    <link rel="stylesheet" href="css/scheme.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"/>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+
+
+
+<!-- Top Quick Links -->
+<section id="top-bar">
+    <div class="wrapper">
+        <div class="top-bar">
+            <div class="top-bar__links">
+                <ul>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Бренды</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="top-bar__shopinfo txt-center">Интернет-магазин спортивных товаров для спорта, туризма и отдыха "Ракета", г. Псков</div>
+            <div class="top-bar__contact txt-right">
+                <ul>
+                    <li>+7 (8112) 22 22 72</li>
+                    <li><a href="mailto:zakaz@raketasport.ru">zakaz@raketasport.ru</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Header -->
+<header id="header">
+    <div class="wrapper">
+        <div class="header">
+            <div class="header__logo">
+                <a href="/"><img src="images/logo.png" alt=""></a>
+            </div>
+            <div class="header__search">
+                <form>
+                    <input type="text" class="form-input" placeholder="Введите запрос для поиска">
+                </form>
+            </div>
+            <div class="header__time">
+                Время работы:
+                <br>Пн-Сб: 10:00 - 19:00;
+                <br>Вс: 11:00 - 18:00;
+            </div>
+            <div class="header__cart txt-right">
+                <div class="header__cart-icon"><div class="header__cart-count">3</div></div> <div class="header__cart-txt">Корзина пуста</div>
+            </div>
+            <div class="header__user mobile-hide">
+                <div class="header__user-txt"><a href="#">Войти</a></div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+<!-- Navigation -->
+<section class="navigation">
+    <div class="wrapper">
+        <div class="mobile-menu">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <nav>
+            <ul>
+                <li class="has-dropdown">
+                    <a href="javascript:void(0)" class="navigation__link catalog-menu catalog-menu-js ">Каталог товаров <i class="icon-arrow down"></i></a>
+                    <div class="catalog-menu-list ">
+                        <ul>
+                            <li><a href="/">Активный отдых (весна, лето)</a></li>
+                            <li><a href="/">Вело запчасти</a></li>
+                            <li><a href="/">Единоборства, бокс</a></li>
+                            <li><a href="/">Игровые виды спорта</a></li>
+                            <li><a href="/">Игры</a></li>
+                            <li><a href="/">Плавание</a></li>
+                            <li><a href="/">Тяжелая атлетика</a></li>
+                            <li><a href="/">Туризм</a></li>
+                            <li><a href="/">Спортоборудование для дома и зала</a></li>
+                            <li><a href="/">Художественная гимнастика</a></li>
+                            <li><a href="/">Фитнес</a></li>
+                            <li><a href="/">Активный отдых (зима)</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="javascript:void(0)" class="navigation__link">Распродажа</a></li>
+                <li><a href="javascript:void(0)" class="navigation__link">Наше производство</a></li>
+                <li><a href="javascript:void(0)" class="navigation__link">Новинки</a></li>
+                <li><a href="javascript:void(0)" class="navigation__link">Ожидаемые поступления</a></li>
+            </ul>
+
+            <div class="mobile-menu__close"></div>
+
+            <div class="user-login desktop-hide">
+                <a href="#">Вход</a> | <a href="#">Регистрация</a>
+            </div>
+        </nav>
+    </div>
+</section>
+
+
+
+<!-- Content -->
+<section class="content">
+    <div class="wrapper">
+
+        <!-- Breadcrumbs -->
+        <div class="breadcrumbs">
+            <ul>
+                <li><a href="/">Главная</a></li>
+                <li><a href="/">Единоборства</a></li>
+                <li class="active"><a href="/">Единоборства, бокс</a></li>
+            </ul>
+        </div>
+
+        <!-- Category page -->
+        <div class="news-list-page">
+            <div class="news-list-page__left mobile-hide">
+
+                <div class="content-page__menu">
+                    <strong>Меню</strong>
+                    <ul>
+                        <li><a href="/" class="content-page__menu-link">Активный отдых (весна, лето)</a></li>
+                        <li><a href="/" class="content-page__menu-link">Вело запчасти</a></li>
+                        <li><a href="/" class="content-page__menu-link">Единоборства, бокс</a></li>
+                        <li><a href="/" class="content-page__menu-link">Игровые виды спорта</a></li>
+                        <li><a href="/" class="content-page__menu-link">Игры</a></li>
+                        <li><a href="/" class="content-page__menu-link">Плавание</a></li>
+                        <li><a href="/" class="content-page__menu-link">Тяжелая атлетика</a></li>
+                        <li><a href="/" class="content-page__menu-link">Туризм</a></li>
+                        <li><a href="/" class="content-page__menu-link">Спортоборудование для дома и зала</a></li>
+                        <li><a href="/" class="content-page__menu-link">Художественная гимнастика</a></li>
+                        <li><a href="/" class="content-page__menu-link">Фитнес</a></li>
+                        <li><a href="/" class="content-page__menu-link">Активный отдых (зима)</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="news-list-page__right">
+
+                <h1>Новости компании</h1>
+
+                <div class="news-list">
+                    <div class="news-list__item">
+                        <div class="news-list__item-photo txt-center"><img src="images/news-1.jpg" alt=""></div>
+                        <div class="news-list__item-info">
+                            <div class="news-list__item-title">Новое поступление товаров для художественной гимнастики!</div>
+                            <div class="news-list__item-date">03.07.2019</div>
+                            <div class="news-list__item-desc">К нам на склад поступили: - новые булавы гимнастические вставляющиеся с резиновым наконечником 45 см - новые двухцветные скакалки гимнастические - новые...</div>
+                            <a href="#" class="news-list__item-link btn-red btn-radius">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="news-list__item">
+                        <div class="news-list__item-photo txt-center"><img src="images/news-1.jpg" alt=""></div>
+                        <div class="news-list__item-info">
+                            <div class="news-list__item-title">Новое поступление товаров для художественной гимнастики!</div>
+                            <div class="news-list__item-date">03.07.2019</div>
+                            <div class="news-list__item-desc">К нам на склад поступили: - новые булавы гимнастические вставляющиеся с резиновым наконечником 45 см - новые двухцветные скакалки гимнастические - новые...</div>
+                            <a href="#" class="news-list__item-link btn-red btn-radius">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="news-list__item">
+                        <div class="news-list__item-photo txt-center"><img src="images/news-1.jpg" alt=""></div>
+                        <div class="news-list__item-info">
+                            <div class="news-list__item-title">Новое поступление товаров для художественной гимнастики!</div>
+                            <div class="news-list__item-date">03.07.2019</div>
+                            <div class="news-list__item-desc">К нам на склад поступили: - новые булавы гимнастические вставляющиеся с резиновым наконечником 45 см - новые двухцветные скакалки гимнастические - новые...</div>
+                            <a href="#" class="news-list__item-link btn-red btn-radius">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="news-list__item">
+                        <div class="news-list__item-photo txt-center"><img src="images/news-1.jpg" alt=""></div>
+                        <div class="news-list__item-info">
+                            <div class="news-list__item-title">Новое поступление товаров для художественной гимнастики!</div>
+                            <div class="news-list__item-date">03.07.2019</div>
+                            <div class="news-list__item-desc">К нам на склад поступили: - новые булавы гимнастические вставляющиеся с резиновым наконечником 45 см - новые двухцветные скакалки гимнастические - новые...</div>
+                            <a href="#" class="news-list__item-link btn-red btn-radius">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Newsletter -->
+<section class="newsletter blue-bg">
+    <div class="wrapper">
+        <div class="newsletter-block">
+            <div class="newsletter-block__left">
+                Интернет-магазин спортивных товаров
+                <br>для спорта, туризма и отдыха "Ракета", г. Псков
+            </div>
+            <div class="newsletter-block__right txt-right">
+                <form>
+                    <input type="text" class="form-input" placeholder="Введите ваш email">
+                    <button type="button" class="form-button">Подписаться</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Footer -->
+<footer id="footer">
+    <div class="wrapper">
+        <div class="footer-list">
+            <div class="footer-list__block footer-list__block-about">
+                <p><a href="/"><img src="images/logo.png" alt=""></a></p>
+                <p>© 2015-2016 Ракета Спорт.
+                    <br>Все права пренадлежат владельцам.</p>
+            </div>
+            <div class="footer-list__block footer-list__block-links">
+                <ul>
+                    <li><h4>Информация</h4></li>
+                    <li><a href="/">Оптовикам</a></li>
+                    <li><a href="/">Партнёрам</a></li>
+                    <li><a href="/">Возврат товара</a></li>
+                    <li><a href="/">Контакты</a></li>
+                    <li><a href="/">Обратная связь</a></li>
+                </ul>
+            </div>
+            <div class="footer-list__block footer-list__block-time">
+                <h4>Время работы</h4>
+
+                <p>Пн-Сб. 10:00 - 19:00;
+                    <br>Сб. 11:00 - 18:00;</p>
+                <p>*в другое время принимаются
+                    на почту zakaz@raketasport.ru.</p>
+
+                <p>Обработка заказов производится
+                    в первый рабочий день.</p>
+            </div>
+            <div class="footer-list__block footer-list__block-contact">
+                <h4>Контакты</h4>
+
+                <p class="mobile-hide">Адрес: 180022, Псковская обл, Псков г, Леона
+                    <br>Поземского ул, дом № 102, помещение 2001</p>
+
+                <p>+7 (8112) 222272
+                    <br>zakaz@raketasport.ru</p>
+
+                <p>Пн-Сб: С 10:00 ДО 19:00;
+                    <br>Бс: С 10:00 до 18:00;
+                    <br>Вс: zakaz@raketasport.ru</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<div class="overlay"></div>
+</body>
+</html>
